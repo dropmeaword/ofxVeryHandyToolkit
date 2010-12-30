@@ -11,9 +11,10 @@
 #include <iostream>
 #include <string>
 
+using namespace veryHandy;
+
 string getTimestamp() {
 	stringstream s;
-	//s << ofGetYear() << ofGetMonth() << ofGetDay() << ofGetHours() << ofGetMinutes() << ofGetSeconds();
 
 	Poco::Timestamp epoch(0);
 	Poco::Timestamp now;

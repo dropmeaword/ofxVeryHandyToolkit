@@ -1,0 +1,28 @@
+<install>
+	<name>ofxColor</name>
+	<version>0.1b</version>
+	<author>luis rodil-fernandez</author>
+	<url>http://blog.spinningkid.info/page/ofxVeryHandyUtils</url>
+
+	<add>	
+		<!-- 	=====================================================================	-->
+		<!--	========================== add per project using this addon =========	-->
+		<!-- 	=====================================================================	-->
+
+		<src>
+			<folder name="addons/ofxColor/src">			
+				<file>../../../addons/ofxColor/src/ofxColor.h</file>
+				<file>../../../addons/ofxColor/src/ofxColor.cpp</file>
+				<file>../../../addons/ofxColor/src/ofxGraphicPalette.h</file>
+				<file>../../../addons/ofxColor/src/ofxGraphicPalette.cpp</file>
+			</folder>
+		</src>
+
+		<include>
+			<path>../../../addons/ofxColor/src</path>
+		</include>
+		
+	</add>
+	
+	
+</install>
