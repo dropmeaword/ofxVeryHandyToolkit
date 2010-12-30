@@ -1,4 +1,6 @@
-#pragma once
+#ifndef __OFXCOLOR_H__
+#define __OFXCOLOR_H__
+
 
 #include "utils/ofTypes.h"
  
@@ -26,3 +28,5 @@ class ofxColor : public ofColor {
 			return ((r == c.r) && (g == c.g) && (b == c.b));
 		}
 };
+
+#endif // __OFXCOLOR_H__

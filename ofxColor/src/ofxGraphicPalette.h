@@ -1,11 +1,3 @@
-/*
- *  ofxGraphicPalette.h
- *  displayVoting
- *
- *  Created by zilog on 12/27/10.
- *  Copyright 2010 __MyCompanyName__. All rights reserved.
- *
- */
 #ifndef __OFXGRAPHICPALETTE_H__
 #define __OFXGRAPHICPALETTE_H__
 

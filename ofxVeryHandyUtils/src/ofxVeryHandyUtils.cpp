@@ -1,12 +1,7 @@
 /*
- *  timestamp.cpp
- *  blinker
- *
- *  Created by zilog on 11/21/10.
- *  Copyright 2010 __MyCompanyName__. All rights reserved.
- *
+ * Part of the ofxVeryHandyToolkit openFrameworks addon.
+ * (c) 2010 Luis Rodil-Fernandez
  */
-
 #include "utils.h"
 #include <iostream>
 #include <string>
