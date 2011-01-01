@@ -2,27 +2,24 @@
  * Part of the ofxVeryHandyToolkit openFrameworks addon.
  * (c) 2010 Luis Rodil-Fernandez
  */
-#include "utils.h"
+#include "ofxVeryHandyUtils.h"
 #include <iostream>
 #include <string>
-
-using namespace veryHandy;
+#include <stdlib.h>
+#include <time.h>
 
 string getTimestamp() {
-	stringstream s;
+	time_t t0 = time(NULL);
 
-	Poco::Timestamp epoch(0);
-	Poco::Timestamp now;
-	Poco::Timestamp::TimeDiff diffTime = (now - epoch);
-	unsigned long secSince1970 = (unsigned long) (diffTime/1000);	
-	
-	s << (unsigned long)secSince1970;
-	
+	stringstream s;
+	s << (unsigned long)t0;
+
 	return s.str();
 }
 
 unsigned long getEpoch(string tstamp) {
-	return std::atol( tstamp.c_str() );
+	unsigned long retval = (unsigned long)strtoul( tstamp.c_str(), NULL, 0 ); 
+	return retval;
 }
 
 void testTimestampStuff() {
@@ -33,8 +30,6 @@ void testTimestampStuff() {
 string pprintBool(bool b) {
 	return ((b == true) ? "true" : "false");
 }
-
-
 
 string pathCombine(const string& p1, const string& p2) {
    char sep = '/';

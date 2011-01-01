@@ -4,11 +4,9 @@
  */
 #include "ofMain.h"
 
-namespace veryHandy {
-	string getTimestamp();
-	unsigned long getEpoch(string tstamp);
-	void testTimestampStuff();
-	string pathCombine(const string& p1, const string& p2);
+string getTimestamp();
+unsigned long getEpoch(string tstamp);
+void testTimestampStuff();
+string pathCombine(const string& p1, const string& p2);
 
-	string pprintBool(bool b);
-}; // namespace
+string pprintBool(bool b);
