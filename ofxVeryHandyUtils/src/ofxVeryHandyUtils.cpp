@@ -8,23 +8,25 @@
 #include <stdlib.h>
 #include <time.h>
 
-string getTimestamp() {
+unsigned long getTimestampAsLong() {
 	time_t t0 = time(NULL);
+	return (unsigned long)t0;
+}
 
+string getTimestampAsString() {
 	stringstream s;
-	s << (unsigned long)t0;
-
+	s << getTimestampAsLong();
 	return s.str();
 }
 
-unsigned long getEpoch(string tstamp) {
+unsigned long parseTimestamp(string tstamp) {
 	unsigned long retval = (unsigned long)strtoul( tstamp.c_str(), NULL, 0 ); 
 	return retval;
 }
 
 void testTimestampStuff() {
-	cout << "timestamp: " << getTimestamp() << endl;
-	cout << "epoch: " << getEpoch( getTimestamp() ) << endl;
+	cout << "timestamp: " << getTimestampAsLong() << endl;
+	cout << "parsed timestamp: " << parseTimestamp( getTimestampAsString() ) << endl;
 }
 
 string pprintBool(bool b) {

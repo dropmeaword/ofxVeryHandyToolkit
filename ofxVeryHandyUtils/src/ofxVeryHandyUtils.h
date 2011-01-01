@@ -4,9 +4,12 @@
  */
 #include "ofMain.h"
 
-string getTimestamp();
-unsigned long getEpoch(string tstamp);
+string getTimestampAsString();
+unsigned long getTimestampAsLong();
+unsigned long parseTimestamp(string tstamp);
 void testTimestampStuff();
-string pathCombine(const string& p1, const string& p2);
+
 
 string pprintBool(bool b);
+
+string pathCombine(const string& p1, const string& p2);

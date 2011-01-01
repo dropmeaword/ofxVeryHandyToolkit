@@ -35,8 +35,8 @@ void testApp::drawPalette(ofxGraphicPalette p, int x, int y) {
 void testApp::draw(){
 	ofSetColor(0xffffff);
 
-	string tstamp = getTimestamp();
-	unsigned long epoch = getEpoch( tstamp );
+	string tstamp = getTimestampAsString();
+	unsigned long epoch = parseTimestamp( tstamp );
 	
 	stringstream s;
 	s << "tstamp " << tstamp << endl << "epoch " << epoch;
