@@ -13,3 +13,9 @@ This is a collection of openFrameworks addons that I have been building along a 
 
 This has been used in interactive installations such as ikStaar and FriendSlicer.
 
+<h2>MODE D'EMPLOI</h2>
+. Get latest version from github at https://github.com/dropmeaword/ofxVeryHandyToolkit
+. Add the ofxVeryHandyToolkit in to your OF installation under the addons directory
+. Include it in your project as you would any other addon
+. Delete the example directory as to not conflict with your own main OF loop
+
