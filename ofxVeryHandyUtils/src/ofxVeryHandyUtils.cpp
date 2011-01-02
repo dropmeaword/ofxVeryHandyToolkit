@@ -6,7 +6,7 @@
 #include <iostream>
 #include <string>
 #include <stdlib.h>
-#include <time.h>
+#include <ctime>
 
 unsigned long getTimestampAsLong() {
 	time_t t0 = time(NULL);
