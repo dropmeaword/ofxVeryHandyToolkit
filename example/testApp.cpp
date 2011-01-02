@@ -9,6 +9,10 @@
 void testApp::setup(){	
 	p1.load("ikStaar_palette_10x10-2.png", 4);
 	p2.load("ikStaar_palette_10x10.png", 10);
+	p3.load("ikStaar_palette_10x10-2.png", 4);
+	p4.load("ikStaar_palette_10x10-2.png", 4);
+	
+	last = 0;
 }
 
 
@@ -47,7 +51,15 @@ void testApp::draw(){
 	ofDrawBitmapString( s2.str(), 20, 50);	
 	
 	drawPalette(p1, 10, 80);
-	drawPalette(p2, 10, 100);
+	drawPalette(p3, 10, 100);
+	drawPalette(p4, 10, 120);
+	drawPalette(p2, 10, 160);
+	
+	if(last < epoch ) {
+		last = epoch;
+		p3.rotateRight(1);
+		p4.rotateLeft(1);
+	}
 }
 
 

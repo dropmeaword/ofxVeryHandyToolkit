@@ -23,8 +23,11 @@ class testApp : public ofBaseApp{
 
 		void drawPalette(ofxGraphicPalette p, int x, int y);
 
+	unsigned long last;
 	ofxGraphicPalette p1;
 	ofxGraphicPalette p2;
+	ofxGraphicPalette p3;
+	ofxGraphicPalette p4;
 
 };
 
