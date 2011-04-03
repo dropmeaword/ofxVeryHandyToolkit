@@ -1,0 +1,25 @@
+<install>
+	<name>ofxProperties</name>
+	<version>0.1b</version>
+	<author>luis rodil-fernandez</author>
+	<url>http://blog.spinningkid.info/page/ofxVeryHandyUtils</url>
+
+	<add>	
+		<!-- 	=====================================================================	-->
+		<!--	========================== add per project using this addon =========	-->
+		<!-- 	=====================================================================	-->
+
+		<src>
+			<folder name="addons/ofxProperties/src">			
+				<file>../../../addons/ofxProperties/src/ofxProperties.h</file>
+				<file>../../../addons/ofxProperties/src/ofxProperties.cpp</file>
+			</folder>
+		</src>
+
+		<include>
+			<path>../../../addons/ofxProperties/src</path>
+		</include>
+		
+	</add>
+	
+</install>
