@@ -7,6 +7,13 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){	
+	config.load("config.properties");
+	
+	cout << "looking=" << config.getProperty("looking") << endl;
+	cout << "not.looking=" << config.getProperty("not.looking") << endl;
+	cout << "some.integer=" << config.getPropertyAsFloat("some.integer") << endl;
+	cout << "some.float=" << config.getPropertyAsFloat("some.float") << endl;
+	
 	p1.load("ikStaar_palette_10x10-2.png", 4);
 	p2.load("ikStaar_palette_10x10.png", 10);
 	p3.load("ikStaar_palette_10x10-2.png", 4);

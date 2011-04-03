@@ -28,7 +28,9 @@ class testApp : public ofBaseApp{
 	ofxGraphicPalette p2;
 	ofxGraphicPalette p3;
 	ofxGraphicPalette p4;
-
+	
+	//ofxProperties::PropertyMapT props;
+	ofxProperties config;
 };
 
 #endif	

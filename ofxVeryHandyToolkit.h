@@ -4,6 +4,8 @@
 #include "ofxColor/src/ofxColor.h"
 #include "ofxColor/src/ofxGraphicPalette.h"
 
+#include "ofxProperties/src/ofxProperties.h"
+
 #include "ofxVeryHandyUtils/src/ofxVeryHandyUtils.h"
 
 
